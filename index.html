@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Ingrese el texto aquí</h2>
+            <textarea id="inputText" rows="6" placeholder="Ingrese el texto aquí..."></textarea>
+            <span id="message" class="message"></span>
+            <div>
+                <button class="encrypt-btn" onclick="encryptText()">Encriptar</button>
+                <button class="decrypt-btn" onclick="decryptText()">Desencriptar</button>
+            </div>
+            <p>🔒 Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="right">
+            <h2>Resultado</h2>
+            <textarea id="outputText" rows="6" readonly></textarea>
+            <button class="copy-btn" onclick="copyText()">Copiar</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Creado por Eddy, 2024</p>
+    </footer>
+
+</body>
+<script src="./main.js"></script>
+</html>
